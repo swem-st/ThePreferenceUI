@@ -7,6 +7,7 @@ import { TopNavComponent } from './core/layout/nav/topnav.component';
 import { FooterComponent } from './core/layout/footer/footer.component';
 import { HomeComponent } from './modules/home/home.component';
 import { SharedModule } from './shared/shared.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { SharedModule } from './shared/shared.module';
     BrowserModule,
     BrowserAnimationsModule,
     SharedModule,
+    NgbModule,
 
   ],
   providers: [],
