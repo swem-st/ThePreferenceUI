@@ -1,0 +1,11 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+mat-toolbar {
+  position: fixed;
+  background: black;
+  border-bottom: 0.3px solid aliceblue;
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius:10px;
+}
+

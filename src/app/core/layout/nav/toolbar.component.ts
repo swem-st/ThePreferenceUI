@@ -3,10 +3,11 @@ import { Component, OnInit } from '@angular/core';
 import { Router, RouterEvent, NavigationEnd } from '@angular/router';
 
 @Component({
-  selector: 'app-nav',
-  templateUrl: './topnav.component.html'
+  selector: 'app-toolbar',
+  templateUrl: './toolbar.component.html',
+  styleUrls: ['./toolbar.component.scss']
 })
-export class TopNavComponent implements OnInit {
+export class ToolbarComponent implements OnInit {
   //
   // _showBtn = false;
   //
@@ -35,7 +36,7 @@ export class TopNavComponent implements OnInit {
   // /**
   //  * View callback for toggling the sidenav.
   //  *
-  //  * @memberof TopNavComponent
+  //  * @memberof ToolbarComponent
   //  */
   // toggleNav() {
   //   this._sidenavSvc.toggle();
