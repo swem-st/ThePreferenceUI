@@ -1,50 +1,67 @@
 @use '@angular/material' as mat;
 @include mat.core();
 
-$preference-primary-palette: (
-  50: #fff9ff,
-  100: #faf4ff,
-  200: #f5effe,
-  300: #ebe5f4,
-  400: #c8c3d1,
-  500: #aaa5b3,
-  600: #807b88,
-  700: #6c6773,
-  800: #4c4753,
-  900: #ffb700,
-  A100: #c2e4ff,
-  A200: #addcff,
-  A400: #1f9eff,
-  A700: #00518f,
+$preference-primary-hues: (
+  50: #f0ece2,
+  100: #d7cdc0,
+  200: #baac9a,
+  300: #9c8c74,
+  400: #867357,
+  500: #705b3a,
+  600: #655134,
+  700: #57452b,
+  800: #4a3822,
+  900: #3c2a18,
   contrast: (
-    50: rgba(black, 0.87),
-    100: rgba(black, 0.87),
-    200: rgba(black, 0.87),
-    300: rgba(black, 0.87),
-    400: rgba(black, 0.87),
+    50: black,
+    100: black,
+    200: black,
+    300: black,
+    400: black,
     500: white,
     600: white,
     700: white,
     800: white,
-    900: #ee9e36,
-    A100: rgba(black, 0.87),
-    A200: rgba(black, 0.87),
-    A400: white,
-    A700: white,
+    900: white,
   )
 );
 
-$my-primary: mat.define-palette($preference-primary-palette);
-$my-accent: mat.define-palette(mat.$yellow-palette, A200, A100, A400);
+$preference-secondary-hues: (
+  50: #f5f0e1,
+  100: #e8d8b4,
+  200: #d9bf85,
+  300: #cca759,
+  400: #c4963d,
+  500: #bd8621,
+  600: #ba7d1d,
+  700: #b47016,
+  800: #ae630e,
+  900: #a44e00,
+  contrast: (
+    50: black,
+    100: black,
+    200: black,
+    300: black,
+    400: black,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+  )
+);
 
-$my-theme: mat.define-light-theme((
+$preference-primary-palette: mat.define-palette($preference-primary-hues);
+$preference-secondary-palette: mat.define-palette($preference-secondary-hues);
+
+$preference-theme: mat.define-light-theme((
   color: (
-    primary: $my-primary,
-    accent: $my-accent,
+    primary: $preference-primary-palette,
+    accent: $preference-secondary-palette,
   ),
   typography: mat.define-typography-config(),
   density: 0,
 ));
 
-@include mat.all-component-themes($my-theme);
+@include mat.all-component-themes($preference-theme);
 

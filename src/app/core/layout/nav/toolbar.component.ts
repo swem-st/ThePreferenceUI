@@ -8,7 +8,7 @@ import { Router, RouterEvent, NavigationEnd } from '@angular/router';
   styleUrls: ['./toolbar.component.scss']
 })
 export class ToolbarComponent implements OnInit {
-  //
+  isOpen = false;
   // _showBtn = false;
   //
   constructor(

@@ -6,29 +6,41 @@
 <!--<div>-->
 <!--  <div class="cover"></div>-->
 <!--</div>-->
-
-<div class="initial-div">
-  <form class="example-form">
-    <mat-form-field appearance="fill" class="example-full-width">
-      <mat-label>Number</mat-label>
-      <input class="mt-2"
-             [formControl]="myControl"
-             aria-label="Number"
-             matInput
-             placeholder="Pick one"
-             type="text">
-      <!--      <input type="text"-->
-      <!--             placeholder="Pick one"-->
-      <!--             aria-label="Number"-->
-      <!--             matInput-->
-      <!--             [formControl]="myControl"-->
-      <!--             [matAutocomplete]="auto">-->
-      <!--      <mat-autocomplete #auto="matAutocomplete">-->
-      <!--        <mat-option *ngFor="let option of filteredOptions | async" [value]="option">-->
-      <!--          {{option}}-->
-      <!--        </mat-option>-->
-      <!--      </mat-autocomplete>-->
-    </mat-form-field>
-  </form>
+<div>
+  <div class="initial-div">
+    <div class="image-overlay"></div>
+    <div class="content">
+      <h1 class="header">New Summer Collection</h1>
+      <p class="sub-header">DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.</p>
+      <button class="shop-now-button" [routerLink]="['/catalog', 'empty', 'empty' ]">Shop Now</button>
+    </div>
+  </div>
 </div>
-<div class="bgmycolor"></div>
+
+
+<!-- insert after ...-->
+<!--<div class="initial-div">-->
+<!--  <form class="example-form">-->
+<!--    <mat-form-field appearance="fill" class="example-full-width">-->
+<!--      <mat-label>Number</mat-label>-->
+<!--      <input class="mt-2"-->
+<!--             [formControl]="myControl"-->
+<!--             aria-label="Number"-->
+<!--             matInput-->
+<!--             placeholder="Pick one"-->
+<!--             type="text">-->
+<!--      &lt;!&ndash;      <input type="text"&ndash;&gt;-->
+<!--      &lt;!&ndash;             placeholder="Pick one"&ndash;&gt;-->
+<!--      &lt;!&ndash;             aria-label="Number"&ndash;&gt;-->
+<!--      &lt;!&ndash;             matInput&ndash;&gt;-->
+<!--      &lt;!&ndash;             [formControl]="myControl"&ndash;&gt;-->
+<!--      &lt;!&ndash;             [matAutocomplete]="auto">&ndash;&gt;-->
+<!--      &lt;!&ndash;      <mat-autocomplete #auto="matAutocomplete">&ndash;&gt;-->
+<!--      &lt;!&ndash;        <mat-option *ngFor="let option of filteredOptions | async" [value]="option">&ndash;&gt;-->
+<!--      &lt;!&ndash;          {{option}}&ndash;&gt;-->
+<!--      &lt;!&ndash;        </mat-option>&ndash;&gt;-->
+<!--      &lt;!&ndash;      </mat-autocomplete>&ndash;&gt;-->
+<!--    </mat-form-field>-->
+<!--  </form>-->
+<!--</div>-->
+<!--<div class="bgmycolor"></div>-->

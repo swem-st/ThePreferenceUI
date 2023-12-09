@@ -5,7 +5,7 @@
 // import { SidenavService } from './sidenav.service';
 // import { SessionService } from '../../../shared/services/session.service';
 // import { EmployeeProfile } from '../../models/domain/employee_profile';
-// import { AuthService } from '../../auth/auth.service';
+// import { AuthService } from '../../login/login.service';
 // import { SettingsService } from 'src/app/shared/services/settings.service';
 // import { Observable } from 'rxjs';
 //

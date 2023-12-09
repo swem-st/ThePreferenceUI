@@ -7,11 +7,10 @@ import {map, startWith} from 'rxjs/operators';
  */
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  templateUrl: './admin.component.html',
+  styleUrls: ['./admin.component.scss']
 })
-
-export class HomeComponent implements OnInit {
+export class AdminComponent implements OnInit {
   myControl = new FormControl('');
   options: string[] = ['One', 'Two', 'Three'];
   // @ts-ignore

@@ -1,11 +1,37 @@
 <mat-toolbar class="text-white">
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+  <button [matMenuTriggerFor]="categories"
+          type="button"
+          mat-icon-button class="example-icon"
+          aria-label="Example icon-button with menu icon">
     <mat-icon>menu</mat-icon>
   </button>
-  <span>Preference</span>
+  <mat-menu #categories="matMenu">
+    <button mat-menu-item [routerLink]="['/catalog', 'empty', 'empty' ]">All products</button>
+    <button mat-menu-item [matMenuTriggerFor]="man">Man</button>
+    <button mat-menu-item [matMenuTriggerFor]="woman">Woman</button>
+  </mat-menu>
+  <mat-menu #man="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="shirts">Shirt</button>
+    <button mat-menu-item [routerLink]="['/catalog', 'man', 'caps' ]">Caps</button>
+    <button mat-menu-item [routerLink]="['/catalog', 'man', 'jackets' ]">Jackets</button>
+  </mat-menu>
+
+  <mat-menu #woman="matMenu">
+    <button mat-menu-item [routerLink]="['/catalog', 'woman', 'dress' ]">Dress</button>
+    <button mat-menu-item [routerLink]="['/catalog', 'woman', 'pants' ]">Pants</button>
+    <button mat-menu-item [routerLink]="['/catalog', 'woman', 'jackets' ]">Jackets</button>
+  </mat-menu>
+
+  <mat-menu #shirts="matMenu">
+    <button mat-menu-item>Long Sleeve Shirts</button>
+    <button mat-menu-item>Formal Shirts</button>
+  </mat-menu>
+
+  <span routerLink="/home" >Preference</span>
   <span class="example-spacer"></span>
-  <button type="button" class="btn btn-outline-light me-2" aria-label="Example icon-button with heart icon">
-   log in
-  </button>
-  <button type="button" class="btn btn-outline-light">sign up</button>
+  <button type="button"
+          class="btn btn-outline-light"
+          routerLink="/login"
+          aria-label="Sign IN">Sign In</button>
+
 </mat-toolbar>

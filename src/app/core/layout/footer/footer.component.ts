@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 // import { AuthEvents } from 'src/app/models/auth_events';
 // import { environment } from 'src/environments/environment';
-// import { AuthEventService } from '../../auth/authEvent.service';
+// import { AuthEventService } from '../../login/authEvent.service';
 
 @Component({
   selector: 'app-footer',

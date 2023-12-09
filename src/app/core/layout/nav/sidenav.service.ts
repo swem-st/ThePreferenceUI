@@ -1,6 +1,6 @@
 // import { Sidenav, SidenavOptions } from "materialize-css";
 // import { Injectable } from "@angular/core";
-// import { AuthEventService } from "../../auth/authEvent.service";
+// import { AuthEventService } from "../../login/authEvent.service";
 // import { AuthEvents } from "../../models/auth_events";
 // import { Router, RouterEvent, NavigationEnd } from "@angular/router";
 // /**
@@ -40,7 +40,7 @@
 //     }
 //
 //     /**
-//      * Callback for auth events that will handle
+//      * Callback for login events that will handle
 //      * hiding or showing the sidenav.
 //      *
 //      * @param {string} authEvent

@@ -1,0 +1,23 @@
+//EXAMPLE HOW TO TAKE COLOR FROM THEME
+//@use 'sass:map';
+//@use '@angular/material' as mat;
+//@use 'src/app/shared/material/themes/basic-dark-theme.scss' as pref;
+//
+//$color-config:    mat.get-color-config(pref.$preference-theme);
+//$primary-palette: map.get($color-config, 'primary');
+//$accent-palette:  map.get($color-config, 'accent');
+//$warn-palette:    map.get($color-config, 'warn');
+//$is-dark-theme:   map.get($color-config, 'is-dark');
+//$is-dark-theme:   map.get($color-config, 'is-dark');
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position:absolute;
+  top:50%;
+  right:0;
+  left:0;
+}
