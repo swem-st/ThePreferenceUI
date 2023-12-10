@@ -38,34 +38,34 @@ import { CatalogComponent } from './modules/catalog/catalog.component';
     FormsModule,
     MatNativeDateModule,
     ReactiveFormsModule,
-    MsalModule.forRoot(
-      new PublicClientApplication({
-        auth: {
-          clientId: environment.clientId,
-          redirectUri: environment.redirectUri,
-          knownAuthorities: [environment.authorityDomain],
-        },
-        cache: {
-          cacheLocation: 'localStorage',
-          storeAuthStateInCookie: true,
-        }
-      }),
-    {
-      interactionType: InteractionType.Redirect,
-      authRequest: {
-        scopes: [ 'openid' ]
-      }
-    },
-    {
-      interactionType: InteractionType.Redirect,
-      protectedResourceMap: new Map([
-        [environment.endpoint, environment.endpointScopes],
-      ]),
-    }
-    )
+    // MsalModule.forRoot(
+    //   new PublicClientApplication({
+    //     auth: {
+    //       clientId: environment.clientId,
+    //       redirectUri: environment.redirectUri,
+    //       knownAuthorities: [environment.authorityDomain],
+    //     },
+    //     cache: {
+    //       cacheLocation: 'localStorage',
+    //       storeAuthStateInCookie: true,
+    //     }
+    //   }),
+    // {
+    //   interactionType: InteractionType.Redirect,
+    //   authRequest: {
+    //     scopes: [ 'openid' ]
+    //   }
+    // },
+    // {
+    //   interactionType: InteractionType.Redirect,
+    //   protectedResourceMap: new Map([
+    //     [environment.endpoint, environment.endpointScopes],
+    //   ]),
+    // }
+    // )
   ],
   providers: [
-    { provide: HTTP_INTERCEPTORS, useClass: MsalInterceptor, multi: true }
+   // { provide: HTTP_INTERCEPTORS, useClass: MsalInterceptor, multi: true }
   ]
 })
 export class AppModule { }
